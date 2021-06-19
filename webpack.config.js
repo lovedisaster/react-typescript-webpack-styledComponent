@@ -1,7 +1,3 @@
-/**
- * Don't forget to run the DLL config for WebPack first for correct DLL references
- */
-
 var { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const CompressionWebpackPlugin = require("compression-webpack-plugin");
@@ -9,10 +5,10 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const HTMLWebpackTagsPlugin = require("html-webpack-tags-plugin");
 const { join, resolve } = require("path");
 const { Configuration, DllReferencePlugin } = require("webpack");
-// const GlobalStyles = require("./src/ts/Global.styles");
 const { webpack } = require("webpack");
 
 module.exports = (_env, args) => {
+  // Define plugin is not working with webpack 5 but to be researched later.
   // const webpackDefinPlugin = new webpack.DefinePlugin({
   //   GS: JSON.stringify(GlobalStyles),
   // });
@@ -118,13 +114,10 @@ module.exports = (_env, args) => {
         algorithm: "gzip",
         minRatio: 0.8,
         test: /\.(js|html|css)$/,
-        threshold: 10240, // Customize this to the amount you think is big enough to enable compression (in bytes)
+        threshold: 10240,
       }),
     ].filter(Boolean),
   };
 
-  /**
-   * Merge the common configuration with environment-specific ones
-   */
   return { ...commonConfig, ...(args.mode === "production" ? prodConfig : devConfig) };
 };
