@@ -1,0 +1,37 @@
+export default {
+  colors: {
+    primaryBlue: "#007cc2",
+  },
+  zindex: {
+    z1: 10,
+    z2: 20,
+    z3: 30,
+    z4: 40,
+    z5: 50,
+    z6: 60,
+    z7: 70,
+    z8: 80,
+    z9: 90,
+    zmax: 10000001,
+  },
+  fontSize: {
+    H1: "32px",
+    H2: "24px",
+    H3: "22px",
+    H4: "18px",
+    P: "16px",
+    Small: "14px",
+    XSmall: "12px",
+    Tiny: "9px",
+  },
+  media: {
+    xxs: "380px",
+    xxs_m: "381px",
+    xs: "576px",
+    xs_m: "577px",
+    sm: "768px",
+    sm_m: "769px",
+    md: "992px",
+    md_m: "993px",
+  },
+};

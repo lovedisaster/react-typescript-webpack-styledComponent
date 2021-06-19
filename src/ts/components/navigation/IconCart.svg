@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .cls-2 {
+        fill: none;
+        stroke: #333332;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="Granite_Grey_Outline" data-name="Granite Grey Outline">
+    <polyline
+      class="cls-2"
+      points="2.43 10.78 18.11 10.78 34.84 77.71 101.88 77.71 117.64 26.12 21.93 26.04"
+    />
+    <path class="cls-2" d="M104.32,93.53H32.89c-8.37,0-9.12-15.82,0-15.82H36" />
+    <circle class="cls-2" cx="42.34" cy="109.24" r="8.26" />
+    <circle class="cls-2" cx="91.92" cy="109.24" r="8.26" />
+    <line class="cls-2" x1="111.67" y1="43.28" x2="26.33" y2="43.28" />
+    <line class="cls-2" x1="106.55" y1="59.6" x2="30.42" y2="59.6" />
+    <line class="cls-2" x1="48.89" y1="26.08" x2="56.46" y2="77.71" />
+    <line class="cls-2" x1="89.11" y1="26.08" x2="81.54" y2="77.71" />
+  </g>
+</svg>
