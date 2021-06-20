@@ -15,7 +15,7 @@ const Navigation = (props : NavPropsType) => {
             <Cart>
                 <img className="cart" src={cart}/>
                 <span className="value">
-                    $ {props.total}
+                    {props.total}
                 </span>
             </Cart>
         </NavBar>

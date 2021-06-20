@@ -14,7 +14,7 @@ const Hero = (props : DepositAmount) => {
             <PaymentDue>
                 <span>Payment due today</span>
                 <span className="price">
-                    $ {props.depositAmount}
+                   {props.depositAmount}
                 </span>
             </PaymentDue>
         </HeroWrapper>

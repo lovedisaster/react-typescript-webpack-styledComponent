@@ -8,6 +8,9 @@ export const Step1Wrapper = styled.section`
     align-items: flex-start;
     flex-direction: column;
     ${WrapperCommonStyles}
+    > .title{
+        margin-bottom: 0;
+    }
 `;
 
 type ButtonProps = {

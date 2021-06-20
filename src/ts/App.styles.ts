@@ -1,6 +1,13 @@
 import styled, { createGlobalStyle } from "styled-components";
+import GlobalStyles from "./Global.styles";
 
-export const GlobalStyle = createGlobalStyle`
+export const GS = createGlobalStyle`
+    html {
+    box-sizing: border-box;
+    }
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
     body{
         margin:0;
         font-family: 'Open Sans', sans-serif;

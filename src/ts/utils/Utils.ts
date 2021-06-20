@@ -1,5 +1,5 @@
 import _ from "lodash";
 
-export const DeepClone = (obj : any) => {
+export function DeepClone<T> (obj : T) : T {
     return _.cloneDeep(obj);
 }

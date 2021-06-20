@@ -54,7 +54,7 @@ const Step1 = (props : Step1PropsType) => {
                 {
                     plans.map((planItem : PlanCategoryType) => <CategoryButton key={planItem.index} onClick={
                         () => {
-                            props.dispatch({type: Actions.SELECT_PLAN_CATEGORY, payload: planItem.index})
+                            props.dispatch({type: Actions.SELECT_PLAN_CATEGORY, payload: {selected: planItem.index, selectedValue: planItem.value.toLowerCase()}});
                         }
                     } selected={planItem.selected}>
                         {planItem.value}

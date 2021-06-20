@@ -20,7 +20,7 @@ export const Cart = styled.span`
     justify-content: center;
     align-items: center;
     @media (max-width: ${GlobalStyle.media.md_m}) {
-        margin-right: 35px;
+        margin-right: 15px;
     }
     > .cart {
         width: 30px;

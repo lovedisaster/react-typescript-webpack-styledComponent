@@ -64,11 +64,6 @@ module.exports = (_env, args) => {
         template: join(__dirname, "/src/html/index.html"),
         title: "Webpack TypeScript",
       }),
-      new HTMLWebpackTagsPlugin({
-        append: false,
-        scripts: ["libs.js"],
-        publicPath: "/",
-      }),
     ].filter(Boolean),
   };
 
@@ -98,18 +93,6 @@ module.exports = (_env, args) => {
         template: join(__dirname, "/src/html/index.html"),
         title: "Webpack TypeScript",
       }),
-      args.mode === "production" &&
-        new HTMLWebpackTagsPlugin({
-          append: false,
-          scripts: [
-            {
-              glob: "libs.*.js",
-              globPath: join(__dirname, "/dist"),
-              path: "./",
-            },
-          ],
-          publicPath: "/",
-        }),
       new CompressionWebpackPlugin({
         algorithm: "gzip",
         minRatio: 0.8,
