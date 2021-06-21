@@ -1,17 +1,17 @@
-import React from 'react';
-import {BaseBarWrapper} from './BaseBar.styles';
-import PrimaryButton from '../shared/atoms/Buttons';
+import React from "react";
+import { BaseBarWrapper } from "./BaseBar.styles";
+import PrimaryButton from "../shared/atoms/Buttons";
 
 type BaseBarPropType = {
-    enabled: boolean
-}
+  enabled: boolean;
+};
 
-const BaseBar = (props : BaseBarPropType) => {
-    return (
-        <BaseBarWrapper>
-            <PrimaryButton width={"200px"} enabled={props.enabled} value={"Submit Plan"}/>
-        </BaseBarWrapper>
-    );
+const BaseBar = (props: BaseBarPropType) => {
+  return (
+    <BaseBarWrapper>
+      <PrimaryButton width={"200px"} enabled={props.enabled} value={"Submit Plan"} />
+    </BaseBarWrapper>
+  );
 };
 
 export default BaseBar;
