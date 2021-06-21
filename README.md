@@ -14,8 +14,8 @@
 2. Typescript with React.
 3. Styled components.
 4. Multiple ways of testings : <br/>
-   Jest mocked API methods to test page initialization <br/>
+   Jest mocked API methods to test page initialization (App)<br/>
    React unit test (Step1) <br/>
-   Snapshot test against unfrequently changed UI components <br/>
-   Simulating onclick events and test corresponding state change triggered UI changes <br/>
+   Snapshot test against unfrequently changed UI components (Step1)<br/>
+   Simulating onclick events and test corresponding state change triggered UI changes (App -> Step1 & 2 interactions)<br/>
 5. State management with React useReducer hooks.
