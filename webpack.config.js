@@ -2,9 +2,7 @@ var { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const CompressionWebpackPlugin = require("compression-webpack-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-const HTMLWebpackTagsPlugin = require("html-webpack-tags-plugin");
-const { join, resolve } = require("path");
-const { Configuration, DllReferencePlugin } = require("webpack");
+const { join } = require("path");
 const { webpack } = require("webpack");
 
 module.exports = (_env, args) => {
@@ -36,7 +34,6 @@ module.exports = (_env, args) => {
     },
   };
 
-  // Config for development
   const devConfig = {
     devServer: (() => {
       return {
@@ -50,8 +47,6 @@ module.exports = (_env, args) => {
     devtool: "eval-source-map",
     mode: "development",
     output: {
-      // You can use absolute-resource-path if you want to see the full path in the fs
-      devtoolModuleFilenameTemplate: "sources://[resource-path]",
       filename: "[name].js",
       path: join(__dirname, "/dev"),
       publicPath: "/",
@@ -67,7 +62,6 @@ module.exports = (_env, args) => {
     ].filter(Boolean),
   };
 
-  // Config for production
   const prodConfig = {
     devtool: "source-map",
     output: {
